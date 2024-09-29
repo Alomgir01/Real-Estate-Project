@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       header.head {
+    background: rgba(76, 175, 80, 0.8);
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+        .property-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .property-block {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .property-block:hover {
+            transform: scale(1.05);
+        }
+
+        .property-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .property-info {
+            padding: 10px;
+        }
+
+        .property-details {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .book-now-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(76, 175, 80, 0.8);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .book-now-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            width: 25%;
+            padding: 10px;
+        }
+
+        .footer-column h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-column p, .footer-column a {
+            font-size: 14px;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer-column a:hover {
+            color: rgba(76, 175, 80, 0.8);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .social-icons a:hover {
+            color: rgba(76, 175, 80, 0.8);
+        }
+
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            padding-left: 40%;
+           
+        }
+
+
+        @media (max-width: 768px) {
+            .footer-column {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+</header>
+<header class="shead">
+    <nav>
+        <div class="logo">Flat</div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#contact">Blog</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.php">Login</a></li>
+        </ul>
+    </nav>
+</header>
+    <div class="property-grid">
+        <!-- Block 1 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat1.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat2.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat3.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat4.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 5 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat5.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 6 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat6.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 7 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat7.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Block 8 -->
+        <div class="property-block">
+            <div class="property-image" style="background-image: url('flat8.jpg');"></div>
+            <div class="property-info">
+                <div class="property-details">$500,000 | 4 Beds | 3 Baths | 2500 sq.ft.</div>
+                <a href="contact.html" class="book-now-btn">Book Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-column">
+                <h3>Company Name</h3>
+                <p>123 Real Estate Street, City, Country</p>
+                <p>Phone: +1 (234) 567-8900</p>
+                <p>Email: info@company.com</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Properties</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/alomgirh01"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com/alomgirh01"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rifat.alomgir"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alomgirh"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Company Name. All Rights Reserved.</p>
+        </div>
+</footer>
+</body>
+</html>
